@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NearestPoints</string>
+    <string name="altitude">Altitude :</string>
+    <string name="logitude">Logitude :</string>
+    <string name="_40">40</string>
+    <string name="recherche">Recherche</string>
+</resources>

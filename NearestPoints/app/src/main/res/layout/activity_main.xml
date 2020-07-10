@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/univ"
+    android:hapticFeedbackEnabled="false"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="Controller.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Widget.AppCompat.TextView"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:padding="5dp"
+            android:text="@string/altitude"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="60sp"
+            android:layout_height="40sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/_40" />
+
+        <Button
+            android:id="@+id/bt_getP"
+            style="@android:style/Widget.Button"
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10dp"
+            android:background="#072AED"
+            android:text="Position"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:padding="5dp"
+            android:text="@string/logitude"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="60sp"
+            android:layout_height="40sp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="@string/_40" />
+
+        <Button
+            android:id="@+id/bt_desable"
+            style="@android:style/Widget.Button"
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10dp"
+            android:background="#072AED"
+            android:text="Desable GPS"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Button"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_red_dark"
+        android:capitalize="none"
+        android:editable="false"
+        android:ellipsize="middle"
+        android:singleLine="false"
+        android:text="@string/recherche"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#F80404" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/line_evenement" />
+
+</LinearLayout>
